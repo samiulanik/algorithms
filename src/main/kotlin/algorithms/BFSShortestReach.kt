@@ -3,14 +3,6 @@ package algorithms
 import java.util.LinkedList
 import java.util.Queue
 
-data class Node(
-    val id: Int,
-    var visited: Boolean = false,
-    var pred: Node? = null,
-    var distance: Int = 0,
-    val adjList: MutableList<Node> = mutableListOf()
-)
-
 fun bfs(
     numberOfNodes: Int,
     numberOfEdges: Int,
