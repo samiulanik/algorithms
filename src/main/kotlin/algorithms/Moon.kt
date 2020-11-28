@@ -21,7 +21,6 @@ fun journeyToMoon(n: Int, astronaut: Array<Array<Int>>): Long {
             val connectedList = mutableListOf<Int>()
             dfsConnected(it, visited, adjMap, connectedList)
             resultList.add(connectedList)
-            println()
         }
     }
     var sum: Long = 0
