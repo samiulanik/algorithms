@@ -1,4 +1,4 @@
-package algorithms
+package algorithms.graph.bfs
 
 data class Node(
     val id: Int,

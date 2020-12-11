@@ -1,8 +1,8 @@
-package algorithms
+package algorithms.graph.bfs
 
 import java.util.LinkedList
 import java.util.Queue
-
+// hacker rank
 fun bfs(
     numberOfNodes: Int,
     numberOfEdges: Int,

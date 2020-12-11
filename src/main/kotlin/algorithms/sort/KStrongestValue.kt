@@ -1,4 +1,4 @@
-package algorithms
+package algorithms.sort
 
 fun getStrongest(arr: IntArray, k: Int): IntArray {
     var flag = true

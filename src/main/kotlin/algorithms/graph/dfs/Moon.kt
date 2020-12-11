@@ -1,4 +1,4 @@
-package algorithms
+package algorithms.graph.dfs
 
 // hacker rank
 // connected component count

@@ -1,4 +1,4 @@
-package algorithms
+package algorithms.sort
 
 import kotlin.math.abs
 

@@ -1,4 +1,4 @@
-package algorithms
+package algorithms.graph.bfs
 // hacker rank
 
 import java.util.LinkedList

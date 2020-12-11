@@ -1,4 +1,5 @@
-package algorithms
+package algorithms.sort
+
 // hacker rank TLE
 
 fun activityNotifications(expenditure: Array<Int>, d: Int): Int {
@@ -10,7 +11,7 @@ fun activityNotifications(expenditure: Array<Int>, d: Int): Int {
     for (i in expenditure.indices) {
         var slice = Array(d) { 0 }
         if (i + d - 1 < expenditure.size - 1) {
-            slice = expenditure.sliceArray(i..i + d - 1)
+            slice = expenditure.sliceArray(i until i + d)
         }
         var maiden = if (d % 2 == 1) kSelection(slice, 0, d - 1, d / 2 + 1) else (
             kSelection(slice, 0, d - 1, d / 2) +

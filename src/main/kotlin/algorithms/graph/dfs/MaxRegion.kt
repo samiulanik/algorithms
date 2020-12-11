@@ -1,4 +1,4 @@
-package algorithms
+package algorithms.graph.dfs
 
 // hacker rank
 fun maxRegion(grid: Array<Array<Int>>): Int {

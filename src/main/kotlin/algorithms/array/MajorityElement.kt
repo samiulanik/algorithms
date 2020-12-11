@@ -1,4 +1,4 @@
-package algorithms
+package algorithms.array
 
 import kotlin.math.floor
 

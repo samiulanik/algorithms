@@ -1,5 +1,6 @@
-package algorithms
+package algorithms.graph
 
+import algorithms.graph.bfs.Node
 import java.util.LinkedList
 import java.util.Queue
 

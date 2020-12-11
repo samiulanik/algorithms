@@ -1,4 +1,4 @@
-package algorithms
+package algorithms.binarySearch
 
 fun binarySearch(nums: IntArray, key: Int, low: Int, high: Int): Int {
     var first = low
