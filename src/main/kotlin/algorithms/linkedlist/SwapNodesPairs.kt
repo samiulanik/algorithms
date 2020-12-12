@@ -2,10 +2,6 @@ package algorithms.linkedlist
 
 // leetcode
 
-class ListNode(var `val`: Int) {
-    var next: ListNode? = null
-}
-
 fun swapPairs(head: ListNode?): ListNode? {
     var current = head
     val newHead = head?.next
