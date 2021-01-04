@@ -2,7 +2,7 @@ package algorithms.graph.bfs
 
 import java.util.LinkedList
 import java.util.Queue
-// Leetcode
+// 909. Snakes and Ladders
 
 fun snakesAndLadders(board: Array<IntArray>): Int {
     val size = board.size

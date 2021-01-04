@@ -1,5 +1,7 @@
 package algorithms.graph.dfs
 
+// 547. Number of Provinces
+
 fun findCircleNum(M: Array<IntArray>): Int {
     val size = M.size
     val visited = BooleanArray(size) { false }

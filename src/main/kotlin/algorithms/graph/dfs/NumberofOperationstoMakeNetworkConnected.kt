@@ -1,5 +1,7 @@
 package algorithms.graph.dfs
 
+// 1319. Number of Operations to Make Network Connected
+
 fun makeConnected(n: Int, connections: Array<IntArray>): Int {
     if (connections.size < n - 1) return -1
 

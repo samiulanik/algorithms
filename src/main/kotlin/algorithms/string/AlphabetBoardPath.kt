@@ -6,15 +6,15 @@ fun alphabetBoardPath(target: String?): String? {
     var previ = 0
     var prevj = 0
     for (i in target.indices) {
-        val curi = (target[i] - 'a') / 5
-        val curj = (target[i] - 'a') % 5
-        if (curi == previ && curj == prevj) {
+        val curI = (target[i] - 'a') / 5
+        val curJ = (target[i] - 'a') % 5
+        if (curI == previ && curJ == prevj) {
             sb.append("!")
         } else {
-            printPath(sb, previ, prevj, curi, curj)
+            printPath(sb, previ, prevj, curI, curJ)
             sb.append("!")
-            previ = curi
-            prevj = curj
+            previ = curI
+            prevj = curJ
         }
     }
     return sb.toString()

@@ -1,5 +1,7 @@
 package algorithms.adhoc
 
+// 1689. Partitioning Into Minimum Number Of Deci-Binary Numbers
+
 fun minPartitions(n: String): Int {
     var max = 0
     for (i in n.indices) {

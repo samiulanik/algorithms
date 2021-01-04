@@ -2,6 +2,8 @@ package algorithms.linkedlist
 
 import java.util.LinkedList
 
+// 1670. Design Front Middle Back Queue
+
 class FrontMiddleBackQueue {
     private val list = LinkedList<Int>()
     fun pushFront(`val`: Int) {

@@ -1,5 +1,7 @@
 package algorithms.string
 
+// 916. Word Subsets
+
 import kotlin.math.max
 
 fun wordSubsets(A: Array<String>, B: Array<String>): List<String> {

@@ -2,7 +2,7 @@ package algorithms.adhoc
 
 import java.util.Random
 
-// Insert Delete GetRandom O(1) Duplicate
+// 381. Insert Delete GetRandom O(1) - Duplicates allowed
 
 class RandomizedCollection {
     var map: MutableMap<Int, MutableSet<Int>> = mutableMapOf()

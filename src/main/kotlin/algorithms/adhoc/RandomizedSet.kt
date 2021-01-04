@@ -2,7 +2,7 @@ package algorithms.adhoc
 
 import java.util.Random
 
-// Insert Delete GetRandom O(1)
+// 380. Insert Delete GetRandom O(1)
 
 class RandomizedSet {
     /** Initialize your data structure here.  */

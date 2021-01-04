@@ -1,6 +1,6 @@
 package algorithms.graph.dfs
 
-// leetcode
+// 1600. Throne Inheritance
 
 class ThroneInheritance(private val kingName: String) {
     private val successorMap = mutableMapOf<String, MutableList<String>>()

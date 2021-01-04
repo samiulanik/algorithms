@@ -1,5 +1,7 @@
 package algorithms.string
 
+// 1347. Minimum Number of Steps to Make Two Strings Anagram
+
 import kotlin.math.abs
 
 fun minSteps(s: String, t: String): Int {

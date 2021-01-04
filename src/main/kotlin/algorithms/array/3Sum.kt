@@ -1,6 +1,8 @@
 package algorithms.array
 import java.util.Arrays
 
+// 15. 3Sum
+
 fun threeSum(nums: IntArray): List<List<Int>> {
     val result = mutableListOf<List<Int>>()
     if (nums.size < 3) {

@@ -1,10 +1,8 @@
 package algorithms.graph.dfs
 
-fun findWords(board: Array<CharArray>, words: Array<String>): List<String> {
-    return words.filter { isExist(board, it) }
-}
+// 79. Word Search
 
-fun isExist(board: Array<CharArray>, word: String): Boolean {
+fun exist(board: Array<CharArray>, word: String): Boolean {
     for (i in board.indices) {
         for (j in board[0].indices) {
             val visited = Array(board.size) { Array(board[0].size) { false } }

@@ -1,5 +1,7 @@
 package algorithms.array
 
+// 1679. Max Number of K-Sum Pairs
+
 fun maxOperations(nums: IntArray, k: Int): Int {
     val map = nums.toList().groupingBy { it }.eachCount().toMutableMap()
     var count = 0
