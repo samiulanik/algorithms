@@ -1,4 +1,4 @@
-package algorithms.array
+package algorithms.sum
 import java.util.Arrays
 
 // 15. 3Sum

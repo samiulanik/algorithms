@@ -6,16 +6,12 @@ class WordDictionary {
     private val root = TrieNode()
 
     fun addWord(word: String) {
-        var node = root
-        word.forEach {
-            node.children.putIfAbsent(it, TrieNode())
-            node = node.children[it]!!
-        }
-        node.isWord = true
+        val node = root
+        trieInsert(node, word)
     }
 
     fun search(word: String): Boolean {
-        var node = root
+        val node = root
         return searchWord(node, word, 0)
     }
 
