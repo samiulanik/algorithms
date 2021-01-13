@@ -1,6 +1,6 @@
 package algorithms.tree
 
-// leetcode
+// 1373. Maximum Sum BST in Binary Tree
 
 var max = 0
 fun maxSumBST(root: TreeNode?): Int {
@@ -21,11 +21,8 @@ fun findMaxSum(node: TreeNode?): IntArray {
         max = max.coerceAtLeast(sum)
     }
     return intArrayOf(
-        if (isBST) 1 else 0, Math.max(node.`val`, right[1]),
-        Math.min(
-            node.`val`,
-            left[2]
-        ),
+        if (isBST) 1 else 0, node.`val`.coerceAtLeast(right[1]),
+        node.`val`.coerceAtMost(left[2]),
         sum
     )
 }

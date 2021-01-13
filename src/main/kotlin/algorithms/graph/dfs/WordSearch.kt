@@ -3,9 +3,9 @@ package algorithms.graph.dfs
 // 79. Word Search
 
 fun exist(board: Array<CharArray>, word: String): Boolean {
+    val visited = Array(board.size) { Array(board[0].size) { false } }
     for (i in board.indices) {
         for (j in board[0].indices) {
-            val visited = Array(board.size) { Array(board[0].size) { false } }
             if (wordSearch(board, i, j, word, visited, 0)) return true
         }
     }

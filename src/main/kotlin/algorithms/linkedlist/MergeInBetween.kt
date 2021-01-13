@@ -1,19 +1,9 @@
 package algorithms.linkedlist
 
-// leetcode
-
-fun getLast(root: ListNode?): ListNode? {
-    var current = root
-    while (current?.next != null) {
-        current = current.next
-    }
-    return current
-}
+// 1669. Merge In Between Linked Lists
 
 fun mergeInBetween(head1: ListNode?, a: Int, b: Int, head2: ListNode?): ListNode? {
-    val root2 = head2
-    val tail2 = getLast(head2)
-    val resultHead = head1
+    val tail2 = getLastElementLinkedList(head2)
     var current = head1
     var count = 1
     while (count < a) {
@@ -21,12 +11,12 @@ fun mergeInBetween(head1: ListNode?, a: Int, b: Int, head2: ListNode?): ListNode
         count++
     }
     var next = current?.next
-    current?.next = root2
+    current?.next = head2
     while (count < b) {
         println(next?.`val`)
         next = next?.next
         count++
     }
     tail2?.next = next?.next
-    return resultHead
+    return head1
 }

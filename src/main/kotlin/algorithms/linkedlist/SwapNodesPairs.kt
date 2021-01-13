@@ -1,6 +1,6 @@
 package algorithms.linkedlist
 
-// leetcode
+// 24. Swap Nodes in Pairs
 
 fun swapPairs(head: ListNode?): ListNode? {
     var current = head

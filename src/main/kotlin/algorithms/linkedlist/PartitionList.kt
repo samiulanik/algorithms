@@ -1,5 +1,7 @@
 package algorithms.linkedlist
 
+// 86. Partition List
+
 fun partition(head: ListNode?, x: Int): ListNode? {
     if (head?.next == null) return head
     var newHead = head

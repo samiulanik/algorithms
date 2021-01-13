@@ -18,11 +18,10 @@ fun courseScheduleTopSort(numCourses: Int, prerequisites: Array<IntArray>): Set<
 
     while (queue.isNotEmpty()) {
         val current = queue.poll()
-        current.visited = true
         current.neighbors.forEach {
             val course = courseMap[it]!!
             course.inDegree--
-            if (course.inDegree == 0 && !course.visited) {
+            if (course.inDegree == 0) {
                 queue.offer(course)
             }
         }

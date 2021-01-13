@@ -6,6 +6,7 @@ import java.util.LinkedList
 
 class FrontMiddleBackQueue {
     private val list = LinkedList<Int>()
+
     fun pushFront(`val`: Int) {
         list.addFirst(`val`)
     }

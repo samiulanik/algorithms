@@ -1,4 +1,4 @@
-package algorithms.adhoc
+package algorithms.randomizeDataStructure
 
 import java.util.Random
 

@@ -1,4 +1,5 @@
 package algorithms.linkedlist
+
 // 25. Reverse Nodes in k-Group
 
 fun reverseKGroup(head: ListNode?, k: Int): ListNode? {
@@ -13,7 +14,7 @@ fun reverseKGroup(head: ListNode?, k: Int): ListNode? {
         val next = current.next
         if (position % k == 0) {
             current.next = null
-            val revRoot = reverse(currentRoot)
+            val revRoot = reverseLinkedList(currentRoot)
             if (prev != null) prev.next = revRoot
             if (!isFirst) {
                 finalHead = revRoot
@@ -33,17 +34,4 @@ fun reverseKGroup(head: ListNode?, k: Int): ListNode? {
         currentTemp?.next = currentRoot
     }
     return finalHead
-}
-
-private fun reverse(head: ListNode?): ListNode? {
-    if (head?.next == null) return head
-    var prev: ListNode? = null
-    var current = head
-    while (current != null) {
-        val next = current.next
-        current.next = prev
-        prev = current
-        current = next
-    }
-    return prev
 }
